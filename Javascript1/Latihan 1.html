@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <h1 id="namaMotor"></h1>
+
+  <button onclick="onderdilKlakson()">Klakson</button>
+  <p id="bunyiKlakson">..........</p>
+
+  <button onclick="onderdilGas()">Gas</button>
+  <p id="kecepatan">Kecepatan 20Km</p> 
+
+  <button onclick="onderdilSenKanan()">Sen Kanan</button> 
+  <div id="arahSen" style="color: rgb(255, 0, 242);">Sen Kiri</div>  
+  <script>
+
+    document.getElementById('namaMotor').innerHTML = 'Honda';
+
+
+
+    function onderdilKlakson() {
+      let bunyiKlakson = document.getElementById('bunyiKlakson');
+
+      bunyiKlakson.innerHTML = 'Tin Tin Tin Tin Tin Tin';
+      bunyiKlakson.style.color = 'Blue';
+    }
+    function onderdilGas() {
+      document.getElementById('kecepatan').innerHTML = 'Kecepatan 900Km';
+    }
+    function onderdilSenKanan() {
+      let arahSen = document.getElementById('arahSen');
+      arahSen.innerHTML = 'kanan';
+
+    }
+  </script>
+</body>
+</html>
